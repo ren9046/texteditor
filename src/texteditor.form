@@ -1,31 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="texteditor">
-  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="main.texteditor">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="846" height="400"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <component id="7a01f" class="javax.swing.JMenuBar">
-        <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="fb8e7" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <grid id="25f16" class="javax.swing.JMenuBar" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="25f16" class="javax.swing.JMenuBar" layout-manager="GridLayoutManager" row-count="1" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="271" height="24"/>
           </grid>
         </constraints>
@@ -57,6 +43,19 @@
                 <constraints/>
                 <properties>
                   <text value="Paste"/>
+                </properties>
+              </component>
+              <component id="e4e63" class="javax.swing.JMenuItem" binding="undo">
+                <constraints/>
+                <properties>
+                  <text value="Undo"/>
+                </properties>
+              </component>
+              <component id="c6b7a" class="javax.swing.JMenuItem" binding="redo">
+                <constraints/>
+                <properties>
+                  <selected value="false"/>
+                  <text value="Redo"/>
                 </properties>
               </component>
             </children>
@@ -97,6 +96,35 @@
               </component>
             </children>
           </grid>
+          <grid id="8b258" class="javax.swing.JMenu" binding="fontmenu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Font"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="f134b" class="javax.swing.JMenuItem" binding="RFont">
+                <constraints/>
+                <properties>
+                  <text value="Right"/>
+                </properties>
+              </component>
+              <component id="6b03a" class="javax.swing.JMenuItem" binding="CFont">
+                <constraints/>
+                <properties>
+                  <text value="Center"/>
+                </properties>
+              </component>
+              <component id="24aeb" class="javax.swing.JMenuItem" binding="LFont">
+                <constraints/>
+                <properties>
+                  <text value="Left"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
           <grid id="c57bc" class="javax.swing.JMenu" binding="modemenu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints>
               <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
@@ -132,37 +160,146 @@
               </component>
             </children>
           </grid>
-          <grid id="8b258" class="javax.swing.JMenu" binding="fontmenu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+          <grid id="92c18" class="javax.swing.JMenu" binding="styleMenu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Font"/>
+              <text value="Style"/>
             </properties>
             <border type="none"/>
             <children>
-              <component id="f134b" class="javax.swing.JMenuItem" binding="RFont">
+              <component id="1fea2" class="javax.swing.JMenuItem" binding="Style_one">
                 <constraints/>
                 <properties>
-                  <text value="Right"/>
+                  <font size="12" style="0"/>
+                  <foreground color="-65536"/>
+                  <text value="Style1"/>
                 </properties>
               </component>
-              <component id="6b03a" class="javax.swing.JMenuItem" binding="CFont">
+              <component id="7f094" class="javax.swing.JMenuItem" binding="Style_two">
                 <constraints/>
                 <properties>
-                  <text value="Center"/>
+                  <font size="16" style="0"/>
+                  <foreground color="-16776961"/>
+                  <text value="Style2"/>
                 </properties>
               </component>
-              <component id="24aeb" class="javax.swing.JMenuItem" binding="LFont">
+              <component id="5a182" class="javax.swing.JMenuItem" binding="Style_three">
                 <constraints/>
                 <properties>
-                  <text value="Left"/>
+                  <font size="20" style="0"/>
+                  <foreground color="-16711936"/>
+                  <text value="Style3"/>
+                </properties>
+              </component>
+              <component id="d7f2f" class="javax.swing.JMenuItem" binding="Custom_Style">
+                <constraints/>
+                <properties>
+                  <text value="Custom Style"/>
+                </properties>
+              </component>
+              <component id="52593" class="javax.swing.JMenuItem" binding="Customize">
+                <constraints/>
+                <properties>
+                  <font style="1"/>
+                  <text value="Customize..."/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="b2daf" class="javax.swing.JTextField" binding="emailinput">
+            <constraints>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="input your email"/>
+            </properties>
+          </component>
+          <component id="92059" class="javax.swing.JButton" binding="NotifyButton">
+            <constraints>
+              <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Subscribe for notifications"/>
+            </properties>
+          </component>
+          <component id="3d337" class="javax.swing.JButton" binding="unsubscribe">
+            <constraints>
+              <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Unsubscribe for notifications"/>
+            </properties>
+          </component>
+          <grid id="55a90" class="javax.swing.JMenu" binding="textmenu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Text"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="5162b" class="javax.swing.JMenuItem" binding="bold">
+                <constraints/>
+                <properties>
+                  <font style="1"/>
+                  <text value="Bold"/>
+                </properties>
+              </component>
+              <component id="49aa1" class="javax.swing.JMenuItem" binding="italic">
+                <constraints/>
+                <properties>
+                  <font style="2"/>
+                  <text value="Italic"/>
+                </properties>
+              </component>
+              <component id="30838" class="javax.swing.JMenuItem" binding="underline">
+                <constraints/>
+                <properties>
+                  <font style="0"/>
+                  <text value="Underline"/>
+                </properties>
+              </component>
+              <component id="3afe6" class="javax.swing.JMenuItem" binding="clean">
+                <constraints/>
+                <properties>
+                  <text value="Clean"/>
+                </properties>
+              </component>
+              <component id="f1a09" class="javax.swing.JMenuItem" binding="light">
+                <constraints/>
+                <properties>
+                  <armed value="false"/>
+                  <background color="-762"/>
+                  <text value="Light"/>
                 </properties>
               </component>
             </children>
           </grid>
         </children>
       </grid>
+      <component id="cc915" class="javax.swing.JTextPane" binding="textPane1" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="150"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="4f5e4" class="javax.swing.JTextField" binding="countWord">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="word : 0"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>
