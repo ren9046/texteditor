@@ -2,9 +2,10 @@
 ## english version description
 for 111 Object-Oriented Software Engineering Teamwork1
 This program include 8 patterns 
-1. observer : notify user someone use the program edit file by e-mail
-2. prototype : give 3 program language template code about "Hello World"
-3. Strategy : change text locate4. momento : undo/redo
+1. Observer : notify user someone use the program edit file by e-mail
+2. Prototype : give 3 program language template code about "Hello World"
+3. Strategy : change text locate
+4. Momento : undo/redo
 5. Iterator : find text
 6. Flyweight : Change font color
 7. Command : Copy, paste, open new/old file
